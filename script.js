@@ -1,34 +1,32 @@
 // Configuración de WhatsApp
 const WHATSAPP_NUMBER = '59157373076'; // Número boliviano: +591 57373076
 
-// Función para generar enlace de WhatsApp
-function generateWhatsAppLink(message) {
-    const encodedMessage = encodeURIComponent(message);
-    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+// Función para generar enlace de WhatsApp (sin mensaje predefinido)
+function generateWhatsAppLink() {
+    return `https://wa.me/${WHATSAPP_NUMBER}`;
+}
+
+// Función para abrir el chat de WhatsApp
+function openWhatsApp() {
+    window.open(generateWhatsAppLink(), '_blank');
 }
 
 // Función para manejar selección de sabor
-function handleFlavorSelection(modelName, flavor) {
-    const message = `Hola, quiero pedir el ${modelName} sabor ${flavor} de Megatrade Vapes. ¿Me podrías dar más información?`;
-    const whatsappLink = generateWhatsAppLink(message);
-    window.open(whatsappLink, '_blank');
-    
+function handleFlavorSelection() {
+    openWhatsApp();
+
     // Cerrar modal
     document.getElementById('flavor-modal').classList.remove('active');
 }
 
 // Función para manejar clic en botones de pedido
-function handleOrderClick(modelName) {
-    const message = `Hola, estoy interesado en el ${modelName} de Megatrade Vapes. ¿Me podrías dar más información?`;
-    const whatsappLink = generateWhatsAppLink(message);
-    window.open(whatsappLink, '_blank');
+function handleOrderClick() {
+    openWhatsApp();
 }
 
 // Función para manejar clic en botón de contacto general
 function handleContactClick() {
-    const message = 'Hola, vi el catálogo de Megatrade Vapes y me gustaría obtener más información.';
-    const whatsappLink = generateWhatsAppLink(message);
-    window.open(whatsappLink, '_blank');
+    openWhatsApp();
 }
 
 // Inicializar eventos cuando el DOM esté cargado
@@ -86,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span>${flavor}</span>
                     `;
                     flavorBtn.addEventListener('click', function() {
-                        handleFlavorSelection(modelName, flavor);
+                        handleFlavorSelection();
                     });
                     flavorGrid.appendChild(flavorBtn);
                 });
@@ -125,8 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const orderButtons = document.querySelectorAll('.order-btn:not(.flavor-btn)');
     orderButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const modelName = this.getAttribute('data-model');
-            handleOrderClick(modelName);
+            handleOrderClick();
         });
     });
 
