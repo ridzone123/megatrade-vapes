@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vapes | Megatrade Vapes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Megatrade Vapes Logo" class="logo-img">
+                <h1>Megatrade Vapes</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Descubre los Mejores Vapes del Mercado</h2>
+                <p>Calidad premium, sabores únicos y tecnología de vanguardia</p>
+                <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo Section -->
+    <section class="catalogo" id="catalogo">
+        <div class="container">
+            <h2 class="section-title">Nuestros Modelos</h2>
+            <p class="section-subtitle">6 modelos exclusivos para elegir</p>
+            
+            <div class="catalogo-grid">
+                <!-- Vape 1 -->
+                <div class="vape-card">
+                    <div class="vape-image">
+                        <img src="vape1.jpg" alt="Life Pod 8k Kit" onerror="this.src='https://via.placeholder.com/300x300/4a90e2/ffffff?text=Life+Pod+8k'">
+                    </div>
+                    <div class="vape-info">
+                        <h3>Life Pod 8k Kit</h3>
+                        <p class="vape-price">175 BS</p>
+                        <p class="vape-description">Sistema ecológico con batería recargable 650mAh y pods intercambiables de 8,000 puffs con carga USB-C e indicador LED.</p>
+                        <ul class="vape-features">
+                            <li><i class="fas fa-battery-full"></i> 8,000 puffs por pod</li>
+                            <li><i class="fas fa-tint"></i> ~15ml e-liquid (4.5% nicotina)</li>
+                            <li><i class="fas fa-plug"></i> Batería 650mAh USB-C</li>
+                            <li><i class="fas fa-leaf"></i> Sistema eco reutilizable</li>
+                        </ul>
+                        <button class="btn btn-whatsapp show-flavors" data-model="Life Pod 8k Kit" data-flavors='["Watermelon Ice","Blue Razz Ice","Grape Ice"]'>
+                            <i class="fas fa-ice-cream"></i> Ver Sabores
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vape 2 -->
+                <div class="vape-card">
+                    <div class="vape-image">
+                        <img src="vape2.jpg" alt="Life Pod Esencia" onerror="this.src='https://via.placeholder.com/300x300/50c878/ffffff?text=Life+Pod+Esencia'">
+                    </div>
+                    <div class="vape-info">
+                        <h3>Life Pod Esencia</h3>
+                        <p class="vape-price">135 BS</p>
+                        <p class="vape-description">Línea esencial de Life Pod con pods de alta calidad, sabores intensos y batería recargable para uso diario.</p>
+                        <ul class="vape-features">
+                            <li><i class="fas fa-battery-full"></i> Pods premium Life Pod</li>
+                            <li><i class="fas fa-tint"></i> Sabores frutales y mentolados</li>
+                            <li><i class="fas fa-wind"></i> Sales de nicotina 4.5%</li>
+                            <li><i class="fas fa-star"></i> Calidad Life Pod</li>
+                        </ul>
+                        <button class="btn btn-whatsapp show-flavors" data-model="Life Pod Esencia" data-flavors='["Watermelon Bubble Gum","Mint Bubble Gum","Mango Ice","Blue Razz Bubble Gum","Cherry Bubble Gum"]'>
+                            <i class="fas fa-ice-cream"></i> Ver Sabores
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vape 3 -->
+                <div class="vape-card">
+                    <div class="vape-image">
+                        <img src="vape3.jpg" alt="Waka Diamond" onerror="this.src='https://via.placeholder.com/300x300/ff6b6b/ffffff?text=Waka+Diamond'">
+                    </div>
+                    <div class="vape-info">
+                        <h3>Waka Diamond</h3>
+                        <p class="vape-price">80 BS</p>
+                        <p class="vape-description">Edición Diamond con acabado brillante texturizado, diseño compacto de bolsillo y sabor intenso en formato desechable.</p>
+                        <ul class="vape-features">
+                            <li><i class="fas fa-gem"></i> Diseño Diamond brillante</li>
+                            <li><i class="fas fa-battery-full"></i> 1,000 puffs</li>
+                            <li><i class="fas fa-tint"></i> 2ml e-liquid (3% nicotina)</li>
+                            <li><i class="fas fa-bolt"></i> Batería 500mAh</li>
+                        </ul>
+                        <button class="btn btn-whatsapp show-flavors" data-model="Waka Diamond" data-flavors='["BlackBerry Blueberry","Triple Mango","Fresh Mint"]'>
+                            <i class="fas fa-ice-cream"></i> Ver Sabores
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vape 4 -->
+                <div class="vape-card">
+                    <div class="vape-image">
+                        <img src="vape4.jpg" alt="Waka 30k" onerror="this.src='https://via.placeholder.com/300x300/9b59b6/ffffff?text=Waka+30k'">
+                    </div>
+                    <div class="vape-info">
+                        <h3>Waka 30k</h3>
+                        <p class="vape-price">180 BS</p>
+                        <p class="vape-description">Alta capacidad con 30,000 puffs, batería recargable USB-C y tecnología de bobina avanzada para sabor constante.</p>
+                        <ul class="vape-features">
+                            <li><i class="fas fa-battery-full"></i> 30,000 puffs</li>
+                            <li><i class="fas fa-tint"></i> Alta capacidad e-liquid</li>
+                            <li><i class="fas fa-bolt"></i> Recargable USB-C</li>
+                            <li><i class="fas fa-percentage"></i> 7% de nicotina</li>
+                        </ul>
+                        <button class="btn btn-whatsapp show-flavors" data-model="Waka 30k" data-flavors='["Blueberry Mint","Cherry Watermelon Mint","Coco Strawberry","Dark Cherry","Fresh Mint","Strawberry Watermelon","Watermelon Chill","Mango Ice","Kiwi Passion Fruit Guava"]'>
+                            <i class="fas fa-ice-cream"></i> Ver Sabores
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vape 5 -->
+                <div class="vape-card">
+                    <div class="vape-image">
+                        <img src="vape5.jpg" alt="Waka 50k" onerror="this.src='https://via.placeholder.com/300x300/1abc9c/ffffff?text=Waka+50k'">
+                    </div>
+                    <div class="vape-info">
+                        <h3>Waka 50k</h3>
+                        <p class="vape-price">200 BS</p>
+                        <p class="vape-description">Waka 50K Icon con tanque transparente, tecnología Dual Mesh, Smart Dashboard digital y modos Normal/Boost para control total.</p>
+                        <ul class="vape-features">
+                            <li><i class="fas fa-battery-full"></i> 50,000 puffs (modo Normal)</li>
+                            <li><i class="fas fa-tv"></i> Pantalla digital Smart Dashboard</li>
+                            <li><i class="fas fa-fire"></i> Modos Normal y Boost</li>
+                            <li><i class="fas fa-tint"></i> Tanque transparente visible</li>
+                        </ul>
+                        <button class="btn btn-whatsapp show-flavors" data-model="Waka 50k" data-flavors='["Blueberry Mint","Watermelon Ice","Kiwi Dragon Berry","Cherry Watermelon","Strawberry Kiwi"]'>
+                            <i class="fas fa-ice-cream"></i> Ver Sabores
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Vape 6 -->
+                <div class="vape-card">
+                    <div class="vape-image">
+                        <img src="vape6.jpg" alt="Waka 70k" onerror="this.src='https://via.placeholder.com/300x300/e74c3c/ffffff?text=Waka+70k'">
+                    </div>
+                    <div class="vape-info">
+                        <h3>Waka 70k</h3>
+                        <p class="vape-price">210 BS</p>
+                        <p class="vape-description">Máxima capacidad con 70,000 puffs, tecnología Dual Mesh, pantalla digital completa, 3 modos de potencia y batería 850mAh recargable.</p>
+                        <ul class="vape-features">
+                            <li><i class="fas fa-battery-full"></i> 70,000 puffs máximos</li>
+                            <li><i class="fas fa-tv"></i> Pantalla digital completa</li>
+                            <li><i class="fas fa-fire"></i> 3 modos de potencia</li>
+                            <li><i class="fas fa-bolt"></i> Batería 850mAh USB-C</li>
+                        </ul>
+                        <button class="btn btn-whatsapp show-flavors" data-model="Waka 70k" data-flavors='["Blueberry","Cherry Bomb","Strawberry"]'>
+                            <i class="fas fa-ice-cream"></i> Ver Sabores
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Sabores -->
+    <div id="flavor-modal" class="flavor-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Selecciona tu Sabor</h3>
+                <button class="close-modal" id="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-product" class="modal-product-name"></p>
+                <div id="flavor-grid" class="flavor-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto Section -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">¿Tienes preguntas? Escríbenos directamente</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp whatsapp-icon"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>Respuesta inmediata</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt location-icon"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Envíos a todo el país</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock clock-icon"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes a Domingo 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-whatsapp">
+                    <h3>Pide tu vape ahora</h3>
+                    <p>Haz clic en el botón para contactarnos directamente por WhatsApp</p>
+                    <a href="#" class="btn btn-whatsapp-large" id="whatsapp-contact">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Megatrade Vapes Logo" class="footer-logo-img">
+                    <h3>Megatrade Vapes</h3>
+                </div>
+                <p>&copy; 2024 Megatrade Vapes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float" id="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

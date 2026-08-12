@@ -1,0 +1,27 @@
+📸 NOMBRES DE LAS IMÁGENES
+
+Estos son los nombres EXACTOS que deben tener tus imágenes:
+
+📁 logo.png     → LOGO de Megatrade Vapes (IMPORTANTE)
+📁 vape1.jpg   → Para el "Life Pod 8k Kit"
+📁 vape2.jpg   → Para el "Life Pod Esencia"
+📁 vape3.jpg   → Para el "Waka Diamond"
+📁 vape4.jpg   → Para el "Waka 30k"
+📁 vape5.jpg   → Para el "Waka 50k" (antes era Waka 36k)
+📁 vape6.jpg   → Para el "Waka 70k"
+
+⚠️ IMPORTANTE:
+- Los nombres deben ser EXACTAMENTE estos
+- Deben estar en formato .jpg o .png
+- Deben estar en la MISMA carpeta que los otros archivos
+- El tamaño ideal es 300x300 píxeles (vapes)
+- El logo debe tener fondo transparente si es posible
+- No deben pesar más de 500KB cada una
+
+💡 TIP:
+Si tus imágenes tienen otros nombres, puedes:
+1. Renombrarlas a los nombres indicados
+2. O cambiar los nombres en el archivo index.html
+
+Mientras no agregues tus imágenes, la página mostrará 
+imágenes de ejemplo (placeholders) con colores.

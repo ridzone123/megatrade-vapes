@@ -1,0 +1,54 @@
+⚡ CONFIGURACIÓN RÁPIDA - Megatrade Vapes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔥 PASO 1: Configurar tu número de WhatsApp
+
+Abre el archivo: script.js
+Busca la línea: const WHATSAPP_NUMBER = '521234567890';
+Cámbialo por tu número REAL (sin el símbolo +)
+
+Ejemplo: const WHATSAPP_NUMBER = '525512345678';
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🖼️ PASO 2: Agregar tu LOGO y las 7 imágenes
+
+Nombres exactos:
+- logo.png     → Tu LOGO de Megatrade Vapes (¡IMPORTANTE!)
+- vape1.jpg
+- vape2.jpg  
+- vape3.jpg
+- vape4.jpg
+- vape5.jpg
+- vape6.jpg
+- vape7.jpg
+
+Colócalas en la carpeta vapes-catalog junto con los otros archivos.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PASO 3: Subir a GitHub
+
+1. Ve a github.com y crea un nuevo repositorio
+2. Sube todos los archivos de la carpeta vapes-catalog
+3. Ve a Settings > Pages
+4. En "Source" selecciona "main branch" y "/"
+5. Clic en Save
+6. ¡Espera 2-3 minutos y tu página estará online!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ LISTO - Tu catálogo Megatrade Vapes estará funcionando
+
+🎨 TEMA ACTUAL: Dark Blue Elegante
+- Fondo azul oscuro profesional
+- Gradientes azules modernos
+- Diseño responsivo y atractivo
+- Logo personalizado de Megatrade Vapes
+
+Para ver más detalles de personalización, abre:
+- INSTRUCCIONES.md (guía completa)
+- PERSONALIZACION.md (cambiar colores, textos, etc.)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

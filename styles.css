@@ -1,0 +1,700 @@
+/* Reset y Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1e3a8a;      /* Azul oscuro elegante */
+    --secondary-color: #3b82f6;    /* Azul medio brillante */
+    --accent-color: #60a5fa;       /* Azul claro de acento */
+    --dark-color: #0f172a;         /* Azul muy oscuro/negro azulado */
+    --light-color: #1e293b;        /* Gris azulado oscuro */
+    --white: #f8fafc;              /* Blanco azulado muy claro */
+    --whatsapp-color: #25d366;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 8px 20px rgba(59, 130, 246, 0.3);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: var(--dark-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+    color: var(--white);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo i {
+    font-size: 2rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-list a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-list a:hover {
+    color: var(--light-color);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0a1628 0%, var(--dark-color) 50%, var(--primary-color) 100%);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+    color: var(--white);
+    border: 1px solid var(--accent-color);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-whatsapp {
+    background-color: var(--whatsapp-color);
+    color: var(--white);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-whatsapp-large {
+    background-color: var(--whatsapp-color);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-whatsapp-large:hover {
+    background-color: #128c7e;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Catálogo Section */
+.catalogo {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, var(--dark-color) 0%, #1a2744 100%);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vape-card {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.vape-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--secondary-color);
+}
+
+.vape-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.vape-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.vape-card:hover .vape-image img {
+    transform: scale(1.1);
+}
+
+.vape-info {
+    padding: 1.5rem;
+}
+
+.vape-info h3 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.vape-price {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.3);
+}
+
+.vape-description {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.vape-features {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.vape-features li {
+    color: #cbd5e1;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vape-features i {
+    color: var(--accent-color);
+    font-size: 0.8rem;
+}
+
+/* Contacto Section */
+.contacto {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #1a2744 0%, var(--dark-color) 100%);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--secondary-color);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.whatsapp-icon {
+    color: var(--whatsapp-color);
+}
+
+.location-icon {
+    color: var(--accent-color);
+}
+
+.clock-icon {
+    color: var(--secondary-color);
+}
+
+.contact-item h3 {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+}
+
+.contact-item p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.contact-whatsapp {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), rgba(18, 140, 126, 0.2));
+    border: 2px solid var(--whatsapp-color);
+    border-radius: 15px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-whatsapp h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-whatsapp p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.contact-whatsapp .btn {
+    background: linear-gradient(135deg, var(--whatsapp-color), #128c7e);
+    color: var(--white);
+    border: 1px solid var(--whatsapp-color);
+}
+
+.contact-whatsapp .btn:hover {
+    background: linear-gradient(135deg, #128c7e, var(--whatsapp-color));
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(180deg, var(--dark-color) 0%, #0a1628 100%);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-logo i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.footer-logo h3 {
+    font-size: 1.2rem;
+}
+
+.footer p {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--whatsapp-color);
+    color: var(--white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: var(--shadow-hover);
+    z-index: 1000;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-list {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .vape-info {
+        padding: 1rem;
+    }
+
+    .vape-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .contact-item i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.vape-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.vape-card:nth-child(1) { animation-delay: 0.1s; }
+.vape-card:nth-child(2) { animation-delay: 0.2s; }
+.vape-card:nth-child(3) { animation-delay: 0.3s; }
+.vape-card:nth-child(4) { animation-delay: 0.4s; }
+.vape-card:nth-child(5) { animation-delay: 0.5s; }
+.vape-card:nth-child(6) { animation-delay: 0.6s; }
+.vape-card:nth-child(7) { animation-delay: 0.7s; }
+
+/* Modal de Sabores */
+.flavor-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.flavor-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border-radius: 20px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-header h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.close-modal {
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-product-name {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.flavor-btn {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+    padding: 1rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flavor-btn:hover {
+    background: linear-gradient(145deg, var(--secondary-color), var(--primary-color));
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+.flavor-btn i {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.flavor-btn:hover i {
+    color: var(--white);
+}
+
+/* Botones dentro del modal */
+.flavor-grid .flavor-btn {
+    min-height: 80px;
+}
+
+/* Botones principales de las tarjetas */
+.btn-whatsapp.show-flavors {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border: 1px solid var(--accent-color);
+}
+
+.btn-whatsapp.show-flavors:hover {
+    background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+    transform: translateY(-2px);
+}
