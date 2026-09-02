@@ -181,6 +181,39 @@ body {
     box-shadow: var(--shadow-hover);
 }
 
+/* Banner Mayorista */
+.mayorista {
+    background: linear-gradient(90deg, var(--dark-color), var(--primary-color));
+    border-top: 1px solid rgba(59, 130, 246, 0.3);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 0.9rem 0;
+}
+
+.mayorista-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.mayorista-content p {
+    margin: 0;
+}
+
+.mayorista-btn {
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
 /* Catálogo Section */
 .catalogo {
     padding: 4rem 0;
