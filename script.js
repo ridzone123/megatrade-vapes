@@ -136,6 +136,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Configurar botón mayorista
+    const mayoristaButton = document.getElementById('whatsapp-mayorista');
+    if (mayoristaButton) {
+        mayoristaButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            handleContactClick();
+        });
+    }
+
     // Configurar botón flotante de WhatsApp
     const floatButton = document.getElementById('whatsapp-float');
     if (floatButton) {
